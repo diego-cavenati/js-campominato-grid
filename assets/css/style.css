@@ -21,6 +21,10 @@ body {
     width: 100%;
 }
 
+.play {
+    margin-bottom: 1rem;
+}
+
 .cell {
     display: flex;
     justify-content: center;
