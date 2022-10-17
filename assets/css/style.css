@@ -1,4 +1,3 @@
-/* Live 02 */
 body {
     background-color: lightgray;
 }
@@ -21,7 +20,7 @@ body {
 }
 
 .cell.active {
-    background-color: green;
+    background-color: blue;
 }
 
 .cell.red {
