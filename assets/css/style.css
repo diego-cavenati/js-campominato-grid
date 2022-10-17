@@ -4,25 +4,32 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     max-width: 1142px;
-    margin:  2rem auto;
+    margin:  0 auto;
+}
+
+.row {
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .cell {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100% / 8);
+    width: calc(100% / 10);
     aspect-ratio: 1/1;
-    border: 2px solid white;
-    color: gray;
+    background-color: gray;
 }
 
 .cell.active {
     background-color: blue;
-}
-
-.cell.red {
-    background-color: red;
 }
