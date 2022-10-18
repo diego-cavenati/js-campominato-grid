@@ -18,6 +18,7 @@ function generateMarkup(numb) {
     const cellElement = document.createElement('div')
     cellElement.className = "cell";
     cellElement.innerText = numb;
+
     return cellElement
 }
 
@@ -119,3 +120,5 @@ playDiff3.addEventListener('click', function(){
 
 }
 )
+
+
