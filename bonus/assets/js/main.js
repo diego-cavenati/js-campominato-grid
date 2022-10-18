@@ -9,12 +9,9 @@ const playDiff3 = document.querySelector(`.diff_3`);
 
 // prendo elemento grid
 const gridEl = document.querySelector(`.grid`);
-// const containerEl = document.querySelector(`.container`)
 
 // decido grandezza griglia
-const cellsNumberDiff1 = 100;
-const cellsNumberDiff2 = 81;
-const cellsNumberDiff3 = 49;
+let level = 100;
 
 // generazione singola cell
 function generateMarkup(numb) {
@@ -28,10 +25,10 @@ function generateMarkup(numb) {
 playDiff1.addEventListener('click', function(){
 
     // generazione griglia di gioco quadrata 10x10
-    generateField(cellsNumberDiff1, gridEl);
+    generateField(level, gridEl);
     function generateField(max, domEl) {
 
-        for (let i = 1; i <= cellsNumberDiff1; i++) {
+        for (let i = 1; i <= level; i++) {
 
             const cellElement = generateMarkup(i);
 
@@ -58,11 +55,13 @@ playDiff1.addEventListener('click', function(){
 // click play game diff 2
 playDiff2.addEventListener('click', function(){
 
+    let level = 81;
+
     // generazione griglia di gioco quadrata 10x10
-    generateField(cellsNumberDiff2, gridEl);
+    generateField(level, gridEl);
     function generateField(max, domEl) {
 
-        for (let i = 1; i <= cellsNumberDiff2; i++) {
+        for (let i = 1; i <= level; i++) {
 
             const cellElement = generateMarkup(i);
 
@@ -90,11 +89,13 @@ playDiff2.addEventListener('click', function(){
 // click play game diff 3
 playDiff3.addEventListener('click', function(){
 
+    let level = 49;
+
     // generazione griglia di gioco quadrata 10x10
-    generateField(cellsNumberDiff3, gridEl);
+    generateField(level, gridEl);
     function generateField(max, domEl) {
 
-        for (let i = 1; i <= cellsNumberDiff3; i++) {
+        for (let i = 1; i <= level; i++) {
 
             const cellElement = generateMarkup(i);
 
